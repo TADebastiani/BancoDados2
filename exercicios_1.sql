@@ -16,17 +16,19 @@ END;
 $$ LANGUAGE plpgsql;
 
 
--- tabela
+
 CREATE TABLE users (
 	id int,
 	nome varchar(50)
 );
 
-INSERT INTO users VALUES (1, 'abacate');
-INSERT INTO users VALUES (2, 'morango');
-INSERT INTO users VALUES (3, 'melancia');
-INSERT INTO users VALUES (4, 'laranja');
-INSERT INTO users VALUES (5, 'caqui');
+-- INSERT INTO users 
+-- VALUES 
+-- 	(1, 'abacate'),
+-- 	(2, 'morango'),
+-- 	(3, 'melancia'),
+-- 	(4, 'laranja'),
+-- 	(5, 'caqui');
 
 CREATE or REPLACE FUNCTION maior_media() RETURNS record AS $$
 DECLARE
@@ -47,5 +49,3 @@ BEGIN
 	);
 END;
 $$ LANGUAGE plpgsql;
-
-select nome2 from maior_media2();

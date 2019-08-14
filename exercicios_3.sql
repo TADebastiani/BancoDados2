@@ -19,4 +19,4 @@ $$ language plpgsql;
 create trigger  emp_time before insert or update on emp
 	for each row execute procedure emp_time();
 
-insert into emp(empname, salary) values ('joao', 1000);
+insert into emp(empname, salary) values ('joao', 1234);
